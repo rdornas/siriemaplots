@@ -12,7 +12,7 @@ app_ui <- function(request) {
     shinyUI(fluidPage(
       
       # App title ----
-      titlePanel(title = div(img(src = "siriema_logo2.png", align = "left"), br(), "Siriema plots"), 
+      titlePanel(title = div(img(src = "www/siriema_logo2.png", align = "left"), br(), "Siriema plots"), 
                  windowTitle = "Siriema plots"),
       
       # Sidebar layout with input and output definitions ----

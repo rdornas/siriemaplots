@@ -3,3 +3,4 @@
 .Rproj.user
 .RBuildignore
 .DS_Store
+inst/.DS_Store
