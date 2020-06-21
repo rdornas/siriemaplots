@@ -51,7 +51,7 @@ app_ui <- function(request) {
           hr(),
           
           h5("Please cite as:"),
-          p("Dornas, Rubem A.P. (2018) Siriema plots. https://rdornas.shinyapps.io/siriema_plots.")
+          p("Dornas, Rubem A.P. (2018) Siriema plots. https://rdornas.shinyapps.io/siriemaplots.")
         ),
         
         # Main panel for displaying outputs ----
