@@ -5,6 +5,6 @@ account: rdornas
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2483347
-bundleId: 3296722
+bundleId: 3297302
 url: https://rdornas.shinyapps.io/siriemaplots/
-when: 1592695307.61956
+when: 1592715877.56144
