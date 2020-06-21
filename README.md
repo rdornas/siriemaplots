@@ -7,14 +7,22 @@
 
 <!-- badges: end -->
 
-The goal of siriemaplots is to provide an easy dashboard to visualize
-and download plots (tables and graphs) from Siriema results
+The goal of `siriemaplots` is to provide an easy dashboard to visualize
+and download plots (tables and graphs) from Siriema results.
 
 ## Installation
 
-You can install the development version of siriemaplots with:
+You can install the development version of `siriemaplots` with:
 
 ``` r
 #install.packages(devtools)
-devtools::install.github("rdornas/siriemaplots")
+devtools::install_github("rdornas/siriemaplots")
 ```
+
+To run the app you can chose to do it direclty in R with this code:
+
+``` r
+siriemaplots::run_app()
+```
+
+or just going through <https://rdornas.shinyapps.io/siriemaplots/>.
