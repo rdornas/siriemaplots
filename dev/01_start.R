@@ -15,12 +15,12 @@
 ## Add meta data about your application
 golem::fill_desc(
   pkg_name = "siriemaplots", # The Name of the package containing the App 
-  pkg_title = "siriemaplots", # The Title of the package containing the App 
+  pkg_title = "Siriema plots", # The Title of the package containing the App 
   pkg_description = "Nice plots for Siriema's output.", # The Description of the package containing the App 
   author_first_name = "Rubem", # Your First Name
   author_last_name = "Dornas", # Your Last Name
   author_email = "rapdornas@gmail.com", # Your Email
-  repo_url = NULL # The URL of the GitHub Repo (optional) 
+  repo_url = "https://github.com/rdornas/siriemaplots" # The URL of the GitHub Repo (optional) 
 )     
 
 ## Set {golem} options ----

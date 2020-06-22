@@ -25,5 +25,5 @@ To run the app you can chose to do it direclty in R with this code:
 siriemaplots::run_app()
 ```
 
-or just going through <https://siriemaplots.modeloambiental.com.br/> or
+or just going through <http://siriemaplots.modeloambiental.com.br/> or
 <https://rdornas.shinyapps.io/siriemaplots/>.
