@@ -5,7 +5,6 @@ RUN R -e 'install.packages("remotes")'
 RUN R -e 'remotes::install_github("r-lib/remotes", ref = "97bbf81")'
 RUN Rscript -e 'remotes::install_version("config",upgrade="never", version = "0.3")'
 RUN Rscript -e 'remotes::install_version("golem",upgrade="never", version = "0.2.1")'
-RUN Rscript -e 'remotes::install_version("shiny",upgrade="never", version = "1.4.0.2")'
 RUN Rscript -e 'remotes::install_version("attempt",upgrade="never", version = "0.3.1")'
 RUN Rscript -e 'remotes::install_version("DT",upgrade="never", version = "0.13")'
 RUN Rscript -e 'remotes::install_version("glue",upgrade="never", version = "1.4.1")'
@@ -17,6 +16,7 @@ RUN Rscript -e 'remotes::install_version("shinycssloaders",upgrade="never", vers
 RUN Rscript -e 'remotes::install_version("data.table",upgrade="never", version = "1.12.8")'
 RUN Rscript -e 'remotes::install_version("magrittr",upgrade="never", version = "1.5")'
 RUN Rscript -e 'remotes::install_version("pkgload",upgrade="never", version = "1.1.0")'
+RUN Rscript -e 'remotes::install_github("rstudio/shiny@5798c396ec3a00ca2ac76feda17b608e0e490d36")'
 RUN mkdir /build_zone
 ADD . /build_zone
 WORKDIR /build_zone
