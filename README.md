@@ -8,7 +8,7 @@
 <!-- badges: end -->
 
 The goal of `siriemaplots` is to provide an easy dashboard to visualize
-and download plots (tables and graphs) from Siriema results.
+and download plots (tables and graphs) from Siriema’s results.
 
 ## Installation
 
@@ -25,4 +25,5 @@ To run the app you can chose to do it direclty in R with this code:
 siriemaplots::run_app()
 ```
 
-or just going through <https://rdornas.shinyapps.io/siriemaplots/>.
+or just going through <https://siriemaplots.modeloambiental.com.br/> or
+<https://rdornas.shinyapps.io/siriemaplots/>.
