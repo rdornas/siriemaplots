@@ -48,7 +48,6 @@ app_ui <- function(request) {
           
           # Insert a bar
           hr(),
-          
           h5("Please cite as:"),
           p("Dornas, Rubem A.P. (2018) Siriema plots. http://siriemaplots.modeloambiental.com.br.")
         ),
@@ -60,10 +59,12 @@ app_ui <- function(request) {
           tabsetPanel(type = "tabs",
                       tabPanel("Table",
                                verbatimTextOutput("tableheader", placeholder = F),
-                               DT::dataTableOutput("table")),
+                               DT::dataTableOutput("table") %>% 
+                                 shinycssloaders::withSpinner(type = getOption("spinner.type", default = 4))),
                       tabPanel("Plot", 
                                uiOutput("downloadP"),
-                               plotOutput("plot"))
+                               plotOutput("plot") %>% 
+                                 shinycssloaders::withSpinner(type = getOption("spinner.type", default = 4)))
           )
         )
       )

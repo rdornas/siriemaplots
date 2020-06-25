@@ -64,7 +64,10 @@ app_server <- function( input, output, session ) {
   
   output$table <- 
     
-    DT::renderDataTable(
+    DT::renderDataTable({
+      
+      req(input$file1)
+      
       DT::datatable(data = datasetInput(),
                     rownames = F, 
                     caption = "If you want to download the complete table, select 'All' at the 'Show entries' option, located at the bottom of the table.",
@@ -94,6 +97,7 @@ app_server <- function( input, output, session ) {
                         backgroundColor = DT::styleInterval(cuts = breaks(),
                                                             values = colors()),
                         target = "cell")
+    }
     )
   
   # Plot ----
@@ -186,7 +190,7 @@ app_server <- function( input, output, session ) {
     }
   })
   
-  shinycssloaders::withSpinner(plotOutput("plot"))
+  plotOutput("plot")
   
   # Download plot ----
   output$downloadP <- renderUI({
